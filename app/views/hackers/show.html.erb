@@ -1,0 +1,23 @@
+<div class="page-header">
+  <%= link_to hackers_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_hacker_path(@hacker), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show hacker</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @hacker.name %></dd>
+
+  <dt>Known for:</dt>
+  <dd><%= @hacker.app_name %></dd>
+
+  <dt>Interesting quote:</dt>
+  <dd><%= @hacker.say_something_smart %></dd>
+
+</dl>
